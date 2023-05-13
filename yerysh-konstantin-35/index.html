@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>form registration</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  </head>
+  <body>
+    <form id="registration__form">
+      <div class="row g-3 align-items-center">
+        <div class="col-auto">
+          <label for="first-name" class="col-form-label">Ім'я:</label>
+        </div>
+        <div class="col-auto">
+          <input type="text" id="first__name" name="first-name" class="form-control">
+        </div>
+      </div>
+      <br />
+      
+      <div class="row g-3 align-items-center">
+        <div class="col-auto">
+          <label for="last-name" class="col-form-label">Прізвище:</label>
+        </div>
+        <div class="col-auto">
+          <input type="text" id="last__name" name="last-name" class="form-control">
+        </div>
+      </div>
+      <br />
+      
+      <div class="row g-3 align-items-center">
+        <div class="col-auto">
+          <label for="birthdate" class="col-form-label">Дата народження:</label>
+        </div>
+        <div class="col-auto">
+          <input type="text" id="birthdate" name="birthdate" class="form-control">
+        </div>
+      </div>
+      <br />
+    
+      <label>Стать</label>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="gender" value="male" id="male">
+        <label class="form-check-label" for="male">
+          Чоловіча
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="gender" value="female" id="female" checked>
+        <label class="form-check-label" for="female">
+          Жіноча
+        </label>
+      </div>
+      
+      <select class="form-select" name="city" id="city" aria-label="Default select example">
+        <option value="kyiv">Київ</option>
+        <option value="lviv">Львів</option>
+        <option value="odessa">Одеса</option>
+      </select>
+      <br />
+  
+      <div class="mb-3">
+        <label for="address" class="form-label">Адреса:</label>
+        <textarea class="form-control" id="address" name="address" rows="3"></textarea>
+      </div>
+      <br />
+    
+      <label>Мови, якими володієте:</label>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="ukrainian" name="languages" value="ukrainian">
+        <label class="form-check-label" for="ukrainian">
+          Українська
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="english" name="languages" value="english">
+        <label class="form-check-label" for="english">
+          Англійська
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="russian" name="languages" value="russian">
+        <label class="form-check-label" for="russian">
+          Російська
+        </label>
+      </div>
+      <br />
+    
+      <button type="submit" class="btn btn-primary">Зберегти</button>
+    </form>
+
+    <table class="table" id="data">
+      <thead>
+        <tr>
+          <th>Ім'я</th>
+          <th>Прізвище</th>
+          <th>Дата народження</th>
+          <th>Стать</th>
+          <th>Місто</th>
+          <th>Адреса</th>
+          <th>Мови, якими володієте</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
