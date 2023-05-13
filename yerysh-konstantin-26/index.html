@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            display: flex;
+            flex-direction: row;
+        }
+        
+        .recept__info {
+            display: flex;
+            flex-direction: column;
+            margin: 50px 50px;
+        }
+        .recept__done {
+            background-color: brown;
+            color: white;
+            font-size: 32px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="main" class="main">
+        <div><img src="./images/recept.jpg" alt="recept" width="350px" height="350px"></div>
+        <div class="recept__info">
+            <p class="recept__text">
+                Ingridients
+            </p>
+            <ul>
+                <li>Груши - 300 г.</li>
+                <li>Яйца - 3 шт.</li>
+                <li>Мука пшеничная - 1 стакан объёмом 200 мл.</li>
+                <li>Сахар - 180 г.</li>
+            </ul>
+            <div>
+                <input type="text" id="inputShow">
+            </div>
+            <div id="recept" class="recept__done">
+                <p>
+                    Включить духовку и разогреть ее до 180°C. Груши вымыть, вытереть насухо, удалить сердцевину. Нарезать фрукт полукружочками, форму для запекания застелить пергаментом. Выложить на нее груши. В глубокую емкость вбить яйца, насыпать сахар, соль и мускатный орех. Миксером на высокой скорости взбить ингредиенты до образования густой пены. В яично-сахарную массу просеять муку, аккуратно перемешать деревянной лопаткой. Вылить тесто сверху на груши, отправить в духовку на 30 минут.
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>

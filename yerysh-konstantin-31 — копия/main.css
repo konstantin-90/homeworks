@@ -1,0 +1,59 @@
+.tabs__nav {
+    display: flex;
+    flex-direction: column;
+    margin: 1%;
+    width: 5%;
+}
+
+
+.tabs__nav-btn-1,
+.tabs__nav-btn-2,
+.tabs__nav-btn-3 {
+    background-color: rgb(255, 0, 0);
+    width: 250px;
+    height: 50px;
+    font-size: 32px;
+    border-radius: 20px;
+}
+
+/* .tabs__item {
+    display: none;
+} */
+
+.tabs__nav-btn.active {
+    background-color: blue;
+}
+
+/* .tabs__item.active {
+    display: block;
+} */
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.tabs__content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-right: 5%;
+}
+
+.main {
+    display: flex;
+}
+
+.nav {
+    width: 20%;
+    background-color: aqua;
+}
+
+.table {
+    width: 40%;
+    background-color: brown;
+}
+
+.card {
+    display: block;
+}

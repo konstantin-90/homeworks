@@ -1,0 +1,25 @@
+.slider {
+  position: relative;
+  width: 450px;
+  height: 450px;
+  overflow: hidden;
+  border: 2px solid black;
+  margin: 0 auto;
+}
+
+.slider img {
+  position: absolute;
+  height: 450px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.slider img.active {
+  opacity: 1;
+}
+
+.button {
+  margin-top: 2%;
+  margin-left: 45%;
+  display: flex;
+}
